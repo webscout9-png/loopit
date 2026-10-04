@@ -1,5 +1,5 @@
-appId: com.stackblitz.bolt.diy
-productName: Bolt Local
+appId: com.loopit.app
+productName: Loopit
 directories:
   buildResources: build
   output: dist
@@ -33,6 +33,7 @@ win:
   icon: assets/icons/icon.ico
   target:
     - nsis
+  signDlls: false
   artifactName: ${name}-${version}-${os}-${arch}.${ext}
 
 linux:
@@ -55,9 +56,9 @@ npmRebuild: false
 
 publish:
   provider: github
-  owner: Derek-X-Wang
-  repo: bolt.local
-  private: true
+  owner: webscout9-png
+  repo: loopit
+  private: false
   releaseType: release
 
 electronDownload:
